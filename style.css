@@ -210,7 +210,7 @@ section.begin .profile .outer-square {
     width: 26rem;
     height: 26rem;
     border: 1px solid var(--color-primary);
-    border-radius: 50px;
+    border-radius: 200px;
     position: relative;
     /* animation: move 30s infinite; */
 
@@ -226,12 +226,12 @@ section.begin .profile .outer-square span {
     height: 4rem;
     border-radius: 5px;
     position: absolute;
-    background: var(--color-white);
+    /* background: var(--color-white); */
     color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1rem var(--color-primary-light);
+    /* box-shadow: 0 0 1rem var(--color-primary-light); */
 
 }
 
@@ -240,7 +240,7 @@ section.begin .profile .outer-square span:nth-child(1) {
     top: -2rem;
 } 
 section.begin .profile .outer-square span:nth-child(2) {
-    left: 24rem;
+    left: 23.8rem;
     top: 10rem;
 } 
 
@@ -267,9 +267,12 @@ section.about {
 }
 
 section.about .container {
-    display: grid;
-    grid-template-columns: 26rem auto;
-    gap: 4rem;
+    /* display: grid;
+    grid-template-columns: 26rem auto; */
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 2rem;
 }
 section.about p {
     margin-bottom: 1rem;
@@ -384,6 +387,7 @@ section.services .service .web {
     display: flex;
     gap: 0.2rem;
     text-align: center;
+    align-items: center;
     justify-content: center;
 }
 section.services .service {
